@@ -6,7 +6,8 @@ import React, { Component } from 'react';
 // import Coins from './Coins/Coins';
 // import Notes from './Notes/Notes';
 // import Chart from './Chart/Chart';
-import Animation from './Animation/Animation';
+// import Animation from './Animation/Animation';
+import Numbers from './Numbers/Numbers';
 
 import Header from '../shared/components/layout/Header';
 import Content from '../shared/components/layout/Content';
@@ -26,11 +27,12 @@ class App extends Component {
             chartType: 'line'
         };
 
-        this.columns = [
-            ['BTC', 3000, 6000, 10000, 15000, 13000, 11000],
-            ['ETH', 2000, 3000, 5000, 4000, 3000, 940],
-            ['XRP', 100, 200, 300, 500, 400, 300],
-        ];
+        /* For Chart Component */
+        // this.columns = [
+        //     ['BTC', 3000, 6000, 10000, 15000, 13000, 11000],
+        //     ['ETH', 2000, 3000, 5000, 4000, 3000, 940],
+        //     ['XRP', 100, 200, 300, 500, 400, 300],
+        // ];
     }
 
     componentDidMount() {
@@ -54,6 +56,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Header title="Welcome to new App" />
+
                 <Content>
                     {/*<Home />*/}
                     {/*<Todo />*/}
@@ -70,7 +73,8 @@ class App extends Component {
                         </p>
                     </div>*/}
 
-                    <Animation />
+                    {/*<Animation />*/}
+                    <Numbers />
                 </Content>
                 <Footer />
             </div>
