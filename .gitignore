@@ -1,23 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/chap2/node_modules
-/chap3/node_modules
-/chap5/node_modules
-/chap2/.pnp
-/chap3/.pnp
-/chap5/.pnp
+*/node_modules
+*/.pnp
 .pnp.js
 
 # testing
-/chap2/coverage
-/chap3/coverage
-/chap5/coverage
+*/coverage
 
 # production
-/chap2/build
-/chap3/build
-/chap5/build
+*/build
 
 # misc
 .DS_Store
