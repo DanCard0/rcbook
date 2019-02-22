@@ -9,6 +9,8 @@ import { isMobile, isBot } from '@utils/device';
 
 import clientRender from './render/clientRender';
 
+import apiController from './controllers/api';
+
 import webpackConfig from '@webpack';
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -16,6 +18,9 @@ const isProduction = process.env.NODE_ENV === 'production';
 const app = express();
 
 const compiler = webpack(webpackConfig);
+
+// Routes
+app.use('/api', apiController);
 
 app.use(express.static(path.join(__dirname, '../../public')));
 
